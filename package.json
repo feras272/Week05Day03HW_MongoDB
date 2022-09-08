@@ -1,0 +1,19 @@
+{
+  "name": "week05day03hw_mongodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feras272/Week05Day03HW_MongoDB.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/feras272/Week05Day03HW_MongoDB/issues"
+  },
+  "homepage": "https://github.com/feras272/Week05Day03HW_MongoDB#readme"
+}
