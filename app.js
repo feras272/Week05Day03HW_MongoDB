@@ -3,3 +3,14 @@ console.log("Week 5 Day 3 - MongoDB");
 
 const express = require('express');
 const app = express();
+const port = 3000;
+
+// the home page
+app.get('/', (req, res) => {
+    res.send('<h1>Tuwaiq Academy - JavaScript</h1> <br> <h2> MongoDB, Express, React, and Node JS</h2>');
+});
+
+// SERVER listen on port number 3000
+app.listen(port, () => {
+    console.log('SERVER IS WORKING ...');
+})
