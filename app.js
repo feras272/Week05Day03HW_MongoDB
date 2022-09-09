@@ -25,6 +25,11 @@ app.put('/user-put/:index', (req, res) => {
     res.send('<h1>This is PUT REQUEST</h1> <br> <h2>Welcome to PUT REQUEST page</h2>');
 });
 
+// DELETE Request ------------------------
+app.delete('/user-delete', (req, res) => {
+    res.send('<h1>This is DELETE REQUEST</h1> <br> <h2>Welcome to DELETE REQUEST page</h2>');
+});
+
 // SERVER listen on port number 3000
 app.listen(port, () => {
     console.log('SERVER IS WORKING ...');
