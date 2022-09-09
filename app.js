@@ -14,7 +14,10 @@ app.get('/user-get', (req, res) => {
     res.send('<h1>This is POST REQUEST</h1> <br> <h2>Welcome to GET REQUEST page</h2>');
 })
 
-
+// POST Request ------------------------
+app.post('/user-post', (req, res) => {
+    res.send('<h1>This is POST REQUEST</h1> <br> <h2>Welcome to POST REQUEST page</h2>');
+})
 
 // SERVER listen on port number 3000
 app.listen(port, () => {
