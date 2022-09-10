@@ -2,9 +2,14 @@ console.log("Tuwaiq Academey - JavaScript");
 console.log("Week 5 Day 3 - MongoDB");
 
 const express = require('express');
+
+// import mongoose package manager for MongoDB
+const db = require('./db');
 const app = express();
 const port = 3000;
-const db = require('./db')
+
+// Reading the json inside the body of the request
+app.use(express.json());
 
 // the home page ------------------------
 app.get('/', (req, res) => {
