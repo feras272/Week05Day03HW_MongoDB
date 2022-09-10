@@ -5,7 +5,7 @@ const mongoURI = 'mongodb://localhost:27017/test';
 const db = mongoose.connection;
 
 // Connect to Mongo
-mongoose.connection(mongoURI, { userNewUrlParser: true, useUnifiedTopology: true}, () => {
+mongoose.connect(mongoURI, { userNewUrlParser: true, useUnifiedTopology: true}, () => {
     console.log('DB IS WORKING, CONNECTION ESTABLISHED ...')
 })
 
