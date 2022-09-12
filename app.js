@@ -29,8 +29,13 @@ app.get('/', (req, res) => {
 // GET Request ------------------------
 app.get('/all', (req, res) => {
 
-    res.send('<h1>This is POST REQUEST</h1> <br> <h2>Welcome to GET REQUEST page</h2>');
+    //res.send('<h1>This is POST REQUEST</h1> <br> <h2>Welcome to GET REQUEST page</h2>');
     
+    User.find({}, (err, users) =>{
+        if (err) return handleError(err);
+        console.log('GET: ', users)
+        res.json(users)
+    });
 })
 
 // POST Request ------------------------
