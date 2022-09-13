@@ -12,25 +12,18 @@ const User = require('./models/user')
 // Reading the json inside the body of the request
 app.use(express.json());
 
-// const handleError = function(err) {
-//     console.error(err);
-//     // handle your error
-// };
 
 // the home page ------------------------
 app.get('/', (req, res) => {
     res.send('<h1>Tuwaiq Academy - JavaScript</h1> <br> <h2> MongoDB, Express, React, and Node JS</h2>');
 });
 
-// MongoDB 
-// console.log('=============================')
-// console.log(User)
 
 // GET Request ------------------------
 app.get('/all', (req, res) => {
 
     //res.send('<h1>This is POST REQUEST</h1> <br> <h2>Welcome to GET REQUEST page</h2>');
-    
+
     User.find({}, (err, users) =>{
         if (err) return handleError(err);
         console.log('GET: ', users)
@@ -76,3 +69,14 @@ app.listen(port, () => {
     // }
     // console.log('DATA: ' + newData); 
 // });
+
+
+// const handleError = function(err) {
+//     console.error(err);
+//     // handle your error
+// };
+
+
+// MongoDB 
+// console.log('=============================')
+// console.log(User)
